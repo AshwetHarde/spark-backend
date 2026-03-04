@@ -87,9 +87,12 @@ export async function POST(request) {
 
     console.log("Cloudinary upload success:", result.secure_url);
 
+    // Return shorter URL format with proper extension
+    const shortUrl = result.secure_url;
+
     return NextResponse.json({
       success: true,
-      url: result.secure_url,
+      url: shortUrl,
       publicId: result.public_id,
     });
   } catch (error) {
