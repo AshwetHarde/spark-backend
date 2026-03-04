@@ -41,9 +41,9 @@ export async function GET(request, { params }) {
         
         switch(card.type) {
           case "map":
-            // Only include map if location exists and is not empty
-            if (!business.location || business.location.trim() === "") return null;
-            cardData.text = business.location; // Show address text instead of URL
+            // Only include map if mapLink exists and is not empty
+            if (!business.mapLink || business.mapLink.trim() === "") return null;
+            cardData.url = business.mapLink;
             break;
           case "google_reviews":
             // Handle both full URL and just place ID
@@ -110,7 +110,7 @@ export async function GET(request, { params }) {
       address: business.location || "",
       phone: business.phone || "",
       ...(business.plan !== "Basic" && { email: business.email || "" }),
-      // Note: mapLink removed, location is now text in map card
+      map: business.mapLink || "",
       
       // === Plan ===
       plan: business.plan || "Basic",
