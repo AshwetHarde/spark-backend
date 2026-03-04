@@ -30,7 +30,7 @@ const ALL_CARDS = [
 
 const LINK_FIELDS = [
   { key: "googleReviewId", label: "Google Reviews", icon: FiStar, placeholder: "Place ID or full URL", desc: "e.g., ChIJ6fWlMjYYyisR1ots5l_2mAE" },
-  { key: "mapLink", label: "Google Maps", icon: FiMapPin, placeholder: "https://maps.google.com/...", desc: "Share your business location" },
+  { key: "mapLink", label: "Location Address", icon: FiMapPin, placeholder: "44MM+MHX, near D Mart, Nagpur, Maharashtra 440024", desc: "Share your business address" },
   { key: "instagramUsername", label: "Instagram", icon: FiInstagram, placeholder: "@username or full URL", desc: "", plan: ["Standard", "Premium"] },
   { key: "whatsappNumber", label: "WhatsApp Number", icon: FiSmartphone, placeholder: "9876543210", desc: "Defaults to phone number" },
   { key: "whatsappMessage", label: "WhatsApp Message", icon: FiMessageCircle, placeholder: "Hi, I saw your Spark profile.", desc: "", isMessage: true },

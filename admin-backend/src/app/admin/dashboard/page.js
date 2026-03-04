@@ -356,8 +356,8 @@ export default function Dashboard() {
                   <input type="text" name="googleReviewId" value={editFormData.googleReviewId} onChange={handleEditChange} className="w-full rounded border border-gray-700 bg-gray-900 p-2.5 text-white text-sm sm:p-3" />
                 </div>
                 <div>
-                  <label className="mb-1 block text-sm font-medium text-gray-300">Google Maps Link</label>
-                  <input type="url" name="mapLink" value={editFormData.mapLink} onChange={handleEditChange} className="w-full rounded border border-gray-700 bg-gray-900 p-2.5 text-white text-sm sm:p-3" placeholder="https://maps.google.com/..." />
+                  <label className="mb-1 block text-sm font-medium text-gray-300">Location Address</label>
+                  <input type="text" name="mapLink" value={editFormData.mapLink} onChange={handleEditChange} className="w-full rounded border border-gray-700 bg-gray-900 p-2.5 text-white text-sm sm:p-3" placeholder="e.g., 44MM+MHX, near D Mart, Nagpur, Maharashtra 440024" />
                 </div>
                 <div>
                   <label className="mb-1 block text-sm font-medium text-gray-300">WhatsApp Number</label>
